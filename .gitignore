@@ -1,0 +1,28 @@
+# node modules
+node_modules/
+
+# log files
+logs/
+*.log
+
+# environment variables, never commit this file
+.env
+
+# compiled files
+resources/*
+!resources/altv
+resources/altv/*
+!resources/altv/resource.cfg
+
+# altv server files
+start.sh
+server.cfg
+altv-server
+data/
+cache/
+
+# binaries
+*.dll
+*.exe
+*.so
+*.so.*

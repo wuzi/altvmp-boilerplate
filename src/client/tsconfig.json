@@ -1,0 +1,32 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "lib": [
+      "es5",
+      "es6",
+      "esnext"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "esnext",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "preserveConstEnums": true,
+    "noImplicitAny": true,
+    "sourceMap": false,
+    "rootDir": "./",
+    "outDir": "../../resources/altv/client",
+    "baseUrl": ".",
+    "paths": {
+      "client/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "./**/*.ts"
+  ]
+}

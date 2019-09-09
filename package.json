@@ -1,0 +1,48 @@
+{
+  "name": "altvmp-boilerplate",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ALTVMP server boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "./start.sh",
+    "watch": "nodemon --watch resources --exec \"./start.sh\"",
+    "clean": "rimraf resources/altv/client && rimraf rimraf resources/altv/server",
+    "build-server": "cd src/server && tsc",
+    "build-client": "cd src/client && tsc",
+    "build": "npm run clean && npm run build-server && npm run build-client",
+    "lint": "eslint . --ext .ts --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wuzi/altvmp-boilerplate.git"
+  },
+  "keywords": [
+    "altvmp",
+    "gta5",
+    "boilerplate",
+    "mongodb"
+  ],
+  "author": "Wuzi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wuzi/altvmp-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Wuzi/altvmp-boilerplate#readme",
+  "devDependencies": {
+    "@types/node": "^12.7.1",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-json": "^1.4.0",
+    "husky": "^3.0.3",
+    "nodemon": "^1.19.1",
+    "rimraf": "^2.7.1",
+    "typescript": "^3.5.3"
+  }
+}
