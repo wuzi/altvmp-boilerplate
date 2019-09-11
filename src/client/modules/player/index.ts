@@ -1,5 +1,5 @@
-import alt from 'alt';
+import game from 'natives';
 
 export default async (): Promise<void> => {
-  alt.log('player loaded');
+  game.setPedDefaultComponentVariation(game.playerPedId());
 };
