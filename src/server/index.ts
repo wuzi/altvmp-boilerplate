@@ -1,9 +1,16 @@
-import alt from 'alt';
+/**
+ * Load environment variables
+ */
+import dotenv from 'dotenv';
+dotenv.config();
 
 /**
- * This event is triggered when a player joins the server
- * @param {Player} player - The player who joined the server
+ * Connect to database
  */
-alt.on('playerConnect', (player: alt.Player) => {
-  player.spawn(0, 0, 72, 0);
-});
+import databaseLoader from './database';
+databaseLoader();
+
+/**
+ * Modules (would be nice to load these automatically)
+ */
+import './modules/player';

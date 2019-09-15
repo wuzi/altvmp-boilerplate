@@ -1,11 +1,15 @@
 
 # [ALTV MP] Server Boilerplate
-A boilerplate for [ALTV MP] with [Typescript]!
+A boilerplate for [ALTV MP] with [MongoDB] and [Typescript]!
 
 # Getting started
 1. Clone or download repository.
 2. Copy [ALTV MP] server-files files and paste here (root folder).
 3. Add `altv` resource to `server.cfg`
+4. Open terminal and:
+	- Type `npm install`.
+	- `cp .env.example .env`
+	- Edit .env with your configs.
 
 # Development
 1. Run `tsc -w` in `src/server` and `src/client` folders
@@ -17,3 +21,4 @@ Contributions are greatly appreciated. Please fork this repository and open a pu
 
 [ALTV MP]: <https://altv.mp/>
 [Typescript]: <https://www.typescriptlang.org/>
+[MongoDB]: <https://www.mongodb.com/>

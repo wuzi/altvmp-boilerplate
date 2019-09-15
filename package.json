@@ -35,6 +35,9 @@
   },
   "homepage": "https://github.com/Wuzi/altvmp-boilerplate#readme",
   "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/glob": "^7.1.1",
+    "@types/mongoose": "^5.5.17",
     "@types/node": "^12.7.1",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
     "@typescript-eslint/parser": "^2.0.0",
@@ -44,5 +47,11 @@
     "nodemon": "^1.19.1",
     "rimraf": "^2.7.1",
     "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "glob": "^7.1.4",
+    "log4js": "^5.1.0",
+    "mongoose": "^5.7.1"
   }
 }
