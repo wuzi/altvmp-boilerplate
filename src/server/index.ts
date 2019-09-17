@@ -5,10 +5,14 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 /**
- * Connect to database
+ * Connect to database and bootstrap game
  */
 import databaseLoader from './database';
-databaseLoader();
+import bootstrapLoader from './loaders/bootstrap.loader';
+(async (): Promise<void> => {
+  await databaseLoader();
+  bootstrapLoader();
+})();
 
 /**
  * Modules (would be nice to load these automatically)

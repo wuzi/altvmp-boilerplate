@@ -12,19 +12,17 @@ export interface Vehicle extends mongoose.Document {
 export const VehicleSchema = new mongoose.Schema({
   modelId: {
     type: String,
-    required: true
+    required: true,
   },
   position: {
     x: Number,
     y: Number,
     z: Number,
-    required: true,
   },
   rotation: {
     x: Number,
     y: Number,
     z: Number,
-    required: true,
   },
 }, {
   timestamps: true,
