@@ -51,7 +51,7 @@
   "dependencies": {
     "dotenv": "^8.1.0",
     "glob": "^7.1.4",
-    "log4js": "^5.1.0",
+    "log4js": "^6.4.0",
     "mongoose": "^5.7.5"
   }
 }
